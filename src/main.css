@@ -33,7 +33,7 @@ header {
   display: flex;
 }
 
-.header-buttons button {
+.header-button {
   background-color: rgb(36, 36, 36);
   color: white;
   border: none;
@@ -45,9 +45,9 @@ header {
   cursor: pointer;
 }
 
-.header-buttons button:hover {
+.header-button:hover,
+#header-button-clicked {
   background-color: rgb(54, 54, 54);
-  color: white;
 }
 
 main {
@@ -69,30 +69,6 @@ main {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-}
-
-.dish-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.dish-list button {
-  font-size: 30px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.dish-list button:hover {
-  background-color: rgb(53, 53, 53);
-  color: white;
-  font-size: 31px;
 }
 
 .main-right {
@@ -117,6 +93,31 @@ main {
   letter-spacing: 5px;
   margin: 0;
   color: rgb(80, 80, 80);
+}
+
+.dish-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-list button {
+  font-size: 30px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dish-list button:hover,
+#food-button-clicked {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-size: 31px;
 }
 
 .dish-info {
